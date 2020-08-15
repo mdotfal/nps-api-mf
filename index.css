@@ -14,8 +14,13 @@ button:hover {
   cursor: pointer;
 }
 
+input {
+  margin-right: 20px;
+  width: 200px;
+}
+
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
