@@ -18,10 +18,13 @@ function displayResults( responseJson ) {
   for ( let i = 0; i < responseJson.data.length; i++ ) {
     // append list items to <ul>
     $( '#results-list' ).append(
-      ` <li>
+      ` <hr>
+        <li>
           <h3>${responseJson.data[i].fullName}</h3>
           <p><a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a></p>
-          <p>${responseJson.data[i].description}</p>
+          <p><b>State:</b> ${responseJson.data[i].states}</p>
+          <p><b>Directions:</b> ${responseJson.data[i].directionsInfo}</p>
+          <p><b>Description:</b> ${responseJson.data[i].description}</p>
         </li>
       `
     )};
